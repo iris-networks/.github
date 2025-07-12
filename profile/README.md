@@ -1,65 +1,85 @@
 ## Hi there 👋
 
-**IRIS** is an autonomous agent platform that can see, click, type, and reason — just like a human — across browsers, desktops, terminals, and full computing environments.
+<img src="../iris.png" alt="IRIS" style="width: 100%; max-width: 800px; display: block; margin: 20px auto; border-radius: 10px;">
 
-We’re building from **Singapore** for a global audience. IRIS replaces fragile, script-based automation and bloated RPA stacks with a programmable, model-driven runtime that actually works in the real world.
+**IRIS** is your AI-powered operator for real computers — one that can see, click, type, and reason across browsers, terminals, and full GUI desktops.
+
+This is for devs everywhere who are tired of brittle scripts, outdated RPA platforms, and cloud tools that pretend to automate but just abstract.
+
+IRIS gives you full control over environments, not just APIs. It runs workflows like a real user — and it doesn’t flake out when the UI changes.
+
+---
+
+### ⚙️ Why We're Building IRIS
+
+We’re builders who’ve dealt with bad automation: half-working APIs, flaky no-code tools, and overpriced enterprise software with glossy decks and no edge reliability.
+
+IRIS exists because:
+
+* Automation should feel like writing real code.
+* You should be able to program the whole computer — not just patch together APIs.
+* We want to *actually* replace humans in rote workflows, not just simulate the idea of it.
+
+This isn’t about "AI agents" for the hype. It’s about building reliable systems with real execution power.
 
 ---
 
 ### 🧠 What IRIS Does
 
-* Controls full GUI environments (desktop + browser + terminal)
-* Runs as a containerized agent with remote VNC/WebRTC access
-* Executes user-level workflows (data entry, devops tasks, etc.) without APIs
-* Uses LLMs + custom tools to reason, plan, and act autonomously
-* Built for devs who want control, composability, and no vendor BS
+* Controls entire user environments — browser, desktop, terminal
+* Runs headlessly in containers with VNC/WebRTC access
+* Executes real user-level workflows (data entry, cloud ops, onboarding)
+* Doesn’t rely on brittle APIs or hand-rolled scripts
+* Composable from the ground up: infra, not interfaces
 
-You can think of it like:
+IRIS doesn’t fake automation. It does the damn thing.
 
 ```
-Q: Can IRIS control Excel, the browser, and the terminal all at once?
-A: Yes. And it doesn’t need an API to do it.
+Q: Can IRIS install packages in a terminal, fill in Excel, and submit a form in the browser?
+A: All at once, yes. With no integration required.
 ```
 
 ---
 
-### 🧩 IRIS Architecture
+### 🧩 How It Works
 
-* **MCP (Model Context Protocol):** our open agent-runtime spec
-* **Runtime Backends:** Playwright, VNC, and hybrid environments
-* **Execution Layer:** CLI, HTTP, or prompt-driven agent commands
-* **Infra-first Design:** containerized, composable, horizontally scalable
+* **MCP (Model Context Protocol):** runtime protocol between models and environments
+* **Backends:** terminal, browser, and full desktop environments (Playwright, VNC, hybrid)
+* **Execution Interface:** run via CLI, HTTP, or directly through a prompt
+* **Infra-Native:** container-first, horizontally scalable, and DevOps-friendly
 
-It’s fast. It’s built in Go + TS. And it’s meant to be plugged into your actual stack — not some drag-and-drop abstraction.
-
----
-
-### 🔧 Projects to Explore
-
-* [`mcp`](https://github.com/tryiris/mcp) – model execution protocol
-* [`mcp-terminal-server`](https://github.com/tryiris/mcp-terminal-server) – terminal server that executes commands from LLM agents
-* [`mcp-server-browser`](https://github.com/tryiris/mcp-server-browser) – programmatic browser control over SSE/HTTP
-
-Everything is modular. You can compose agents from protocols or just embed our infra in your product.
+Built in Go + TypeScript. No magic. Just predictable, programmable automation you can embed or extend.
 
 ---
 
-### 📚 Docs & Links
+### 🧰 Projects in the Ecosystem
 
-* 📘 Docs: [https://tryiris.dev](https://tryiris.dev)
-* 📦 Registry: [`@agent-infra`](https://www.npmjs.com/org/agent-infra)
+* [`k8s-orchestrator`](https://github.com/iris-networks/k8s-orchestrator) – Kubernetes orchestration for agent infrastructure
+* [`terminal_mcp`](https://github.com/iris-networks/terminal_mcp) – terminal control with context via MCP
+* [`loopgate`](https://github.com/iris-networks/loopgate) – gateway and routing for agent workflows
+
+IRIS is modular. You can run your own agents, embed ours, or fork it to build something weird. That’s the point.
+
+---
+
+### 📚 Learn More
+
 * 🧠 Vision: [tryiris.dev/showcase](https://tryiris.dev/showcase)
-* 💬 Talk to us: [founders@tryiris.dev](mailto:founders@tryiris.dev)
+* 📘 Docs: [https://tryiris.dev](https://tryiris.dev)
+* 🧪 Registry: [`@agent-infra`](https://www.npmjs.com/org/agent-infra)
+* 💬 Email us: [founders@tryiris.dev](mailto:founders@tryiris.dev)
 
 ---
 
-### 🥷 Team Energy
+### 🥷 How We Think
 
-* Anti-bloat. Anti-vendor-lock. Infra > interfaces.
-* We’ll ship tools, not decks. Protocols, not promises.
-* Building IRIS because automation should feel like code, not punishment.
+* Infra > interfaces. Protocols > platforms.
+* We ship code, not PowerPoints.
+* Automation should feel like using Linux, not dragging blocks around.
 
 ---
 
-> IRIS is your AI operator. It runs workflows, not scripts. It controls real systems, not just API mocks.
-> If that sounds like something you want to build with, dig in.
+> IRIS is what happens when real devs build automation for other devs — not for some procurement team.
+>
+> If you’re tired of reinventing automation on top of broken tools, come build with us.
+
